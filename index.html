@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div
+      style="text-align: center; font-weight: bold; font-size: 30px; margin: 5px"
+    >
+      Tic Tac Toe
+    </div>
+    <div id="game">
+      <div
+        style="text-align: center; font-size: 20px;font-weight: bold; margin: 15px"
+      >
+        {{ turn }}
+      </div>
+      <div class="row">
+        <div id="0|0" class="box top left right" v-on:click="tap"></div>
+        <div id="0|1" class="box top" v-on:click="tap"></div>
+        <div id="0|2" class="box top right left" v-on:click="tap"></div>
+      </div>
+      <div class="row">
+        <div id="1|0" class="box left bottom" v-on:click="tap"></div>
+        <div id="1|1" class="box left bottom" v-on:click="tap"></div>
+        <div id="1|2" class="box right left bottom" v-on:click="tap"></div>
+      </div>
+      <div class="row">
+        <div id="2|0" class="box bottom left" v-on:click="tap"></div>
+        <div id="2|1" class="box bottom left" v-on:click="tap"></div>
+        <div id="2|2" class="box bottom right left" v-on:click="tap"></div>
+      </div>
+    </div>
+  </body>
+  <script src="vue.js"></script>
+  <script src="index.js"></script>
+</html>
